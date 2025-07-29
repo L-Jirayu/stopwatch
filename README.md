@@ -8,9 +8,9 @@ For study about VanillaJS</br>
 ## Tools
 
 **VanillaJS** include</br>
--*HTML*
--*CSS*
--*Javascript*
+-*HTML*</br>
+-*CSS*</br>
+-*Javascript*</br>
 
 -----------------------------------------------------------------------------------------------------</br>
 

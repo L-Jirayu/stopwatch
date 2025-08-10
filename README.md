@@ -1,7 +1,7 @@
 # Stop Watch
 ## Concept
 
-Adapted from VanillaJS to JAM-Stack</br>
+Adapted from VanillaJS to JAM-Stack with Third Party API</br>
 
 -----------------------------------------------------------------------------------------------------
 
@@ -10,7 +10,7 @@ Adapted from VanillaJS to JAM-Stack</br>
 **JAM-Stack** include</br>
 -J = *Javascript*</br>
 -A = *QuoteAPI*</br>
--M = *HTML* + *CSS* and *Bootstrap*</br>
+-M = *HTML* and *CSS* + *Bootstrap*</br>
 
 -----------------------------------------------------------------------------------------------------
 

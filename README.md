@@ -1,16 +1,16 @@
 # Stop Watch
 ## Concept
 
-For study about VanillaJS</br>
+Adapted from VanillaJS to JAM-Stack</br>
 
 -----------------------------------------------------------------------------------------------------
 
 ## Tools
 
-**VanillaJS** include</br>
--*HTML*</br>
--*CSS*</br>
--*Javascript*</br>
+**JAM-Stack** include</br>
+-J = *Javascript*</br>
+-A = *QuoteAPI*</br>
+-M = *HTML* + *CSS* and *Bootstrap*</br>
 
 -----------------------------------------------------------------------------------------------------
 

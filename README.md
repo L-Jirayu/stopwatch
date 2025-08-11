@@ -5,16 +5,27 @@ Adapted from VanillaJS to JAM-Stack with Third Party API</br>
 
 -----------------------------------------------------------------------------------------------------
 
-## Tools
+## Tools for JAM Stack
 
-**JAM-Stack** include</br>
--J = *Javascript*</br>
--A = *QuoteAPI*</br>
--M = *HTML* and *CSS* + *Bootstrap*</br>
+**VanillaJS** include</br>
+-*HTML*</br>
+-*CSS* + *Bootstrap*</br>
+-*Javascript*</br>
+it is **J and M**.
 
------------------------------------------------------------------------------------------------------
+**FastAPI** include</br>
+-*Python*</br>
+it it **A**
+
+------------------------------------------------------------------------------------------
 
 ## Setup
-
+**VanillaJS**</br>
 1.use git for clone</br>
-3.run .html file</br>
+2.run **.html file**</br>
+
+**FastAPI**</br>
+1.Open **api** folder</br>
+2.run **pip install fastapi uvicorn**</br>
+3.and **python -m uvicorn main:app --reload** for use FastAPI</br>
+4.use http://localhost:8000//docs#/ for use FastAPI

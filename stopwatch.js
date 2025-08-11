@@ -49,11 +49,12 @@ resetBtn.addEventListener("click", () => {
   isRunning = false;
   elapsedTime = 0;
   updateDisplay();
+  fetchQuote()
   safeSetTextContent(activityText, '');
 });
 
 function fetchQuote() {
-  fetch("https://api.quotable.io/random")
+  fetch("http://127.0.0.1:8000/quote")
     .then(response => response.json())
     .then(data => {
       safeSetTextContent(activityText, data.content);

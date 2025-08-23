@@ -1,7 +1,7 @@
 # Stop Watch
 ## Concept
 
-Adapted from VanillaJS to JAM-Stack with Third Party API</br>
+Adapted from VanillaJS to JAM Stack with VanillaJS + FastAPI</br>
 
 -----------------------------------------------------------------------------------------------------
 

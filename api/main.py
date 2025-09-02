@@ -14,7 +14,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-QUOTABLE_API = "https://api.quotable.io/random"  # ✅ ใช้ https
+QUOTABLE_API = "http://api.quotable.io/random"  # ✅ ใช้ https
 
 # Cache เก็บคำคมและเวลาอัพเดตล่าสุด
 cached_quote = None

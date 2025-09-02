@@ -54,7 +54,7 @@ resetBtn.addEventListener("click", () => {
 });
 
 function fetchQuote() {
-  fetch("http://127.0.0.1:8000/quote")
+  fetch("https://stopwatch-383p.onrender.com/quote")
     .then(response => response.json())
     .then(data => {
       safeSetTextContent(activityText, data.content);

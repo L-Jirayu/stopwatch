@@ -5,25 +5,27 @@ import time
 
 app = FastAPI()
 
-# ตั้งค่า CORS อนุญาต frontend ที่รันบน localhost:5500 เรียกได้
+# เพิ่มโดเมน production ของ Vercel เข้าไป
 origins = [
-    "http://127.0.0.1:5500"
+    "http://127.0.0.1:5500",                       # ใช้ตอน dev local
+    "https://stopwatch-sigma-olive.vercel.app",    # production domain
+    # ถ้ามี preview domains หลายอัน ใช้ regex ด้านล่างแทน
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins, 
-    allow_credentials=True,
+    allow_origins=origins,            # หรือใช้ allow_origin_regex=r"^https://.*\.vercel\.app$"
+    allow_credentials=False,          # ถ้าไม่ได้ส่ง cookie -> ปิดไว้จะง่ายกว่า
     allow_methods=["*"],
-    allow_headers=["*"], 
+    allow_headers=["*"],
 )
 
-QUOTABLE_API = "http://api.quotable.io/random"
+QUOTABLE_API = "https://api.quotable.io/random"  # ใช้ https
 
 # Cache เก็บคำคมและเวลาอัพเดตล่าสุด
 cached_quote = None
 cache_timestamp = 0
-cache_ttl = 1
+cache_ttl = 1  # วินาที
 
 @app.get("/quote")
 async def get_quote():
@@ -41,5 +43,4 @@ async def get_quote():
 
     cached_quote = data
     cache_timestamp = now
-
     return data

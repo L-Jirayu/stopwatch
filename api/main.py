@@ -21,7 +21,7 @@ cached_quote = None
 cache_timestamp = 0
 cache_ttl = 1  # วินาที
 
-@app.get("/heaสth")
+@app.get("/health")
 async def get_health():
     return {"status": "200 ok"}
 

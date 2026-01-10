@@ -54,7 +54,7 @@ resetBtn.addEventListener("click", () => {
 });
 
 function fetchQuote() {
-  fetch("https://stopwatch-383p.onrender.com/quote")
+  fetch("https://stopwatch-383p.onrender.com/")
     .then(response => response.json())
     .then(data => {
       safeSetTextContent(activityText, data.content);
